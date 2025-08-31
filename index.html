@@ -180,8 +180,8 @@
             contentFrame.style.display = 'block';
             backButton.style.display = 'block'; // 显示返回按钮
             
-            // 使用 proxy.php 或其他后端代理来处理请求
-            contentFrame.src = url;
+            // 使用你的 Cloudflare Workers URL 作为代理
+            contentFrame.src = `https://polished-union-2878.chattsun268.workers.dev/${url}`;
 
             button.disabled = false;
             button.textContent = '开始浏览';
